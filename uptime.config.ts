@@ -16,7 +16,7 @@ const workerConfig: WorkerConfig = {
   monitors: [
     {
       id: 'api_health',
-      name: 'API (Main)',
+      name: 'System Health',
       method: 'GET',
       target: 'https://api.grepit.app/app/health',
       tooltip: 'Main API health check',
@@ -26,10 +26,10 @@ const workerConfig: WorkerConfig = {
     },
     {
       id: 'livekit_health',
-      name: 'LiveKit (Voice/Video)',
+      name: 'Voice and Video',
       method: 'GET',
       target: 'https://api.grepit.app/app/health/livekit',
-      tooltip: 'LiveKit WebRTC service',
+      tooltip: 'Voice and video services',
       statusPageLink: 'https://api.grepit.app',
       expectedCodes: [200],
       timeout: 10000,
