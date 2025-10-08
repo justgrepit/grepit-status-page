@@ -5,7 +5,7 @@ const pageConfig: PageConfig = {
   links: [
     { link: 'https://grepit.app', label: 'grep', highlight: true },
   ],
-  favicon: '/favicon.ico',
+  favicon: '/favicon.svg',
   maintenances: {
     upcomingColor: 'gray',
   },
